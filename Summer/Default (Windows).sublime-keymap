@@ -1,0 +1,10 @@
+[
+    {
+        "keys": ["ctrl+alt+m"], "command": "summer"
+    },
+    { 
+        "keys": ["ctrl+alt+n"],  
+        "command": "insert_snippet", 
+        "args": {"name": "Packages/Summer/namespace.sublime-snippet","name1":"abc"} 
+    }
+]

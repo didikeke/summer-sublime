@@ -1,0 +1,31 @@
+<snippet>
+    <content><![CDATA[
+namespace('${1:summer.controllers}');
+
+$1.${2:${TM_FILENAME/(.*)[.](.*)/$1/g}} = function() {
+
+    var that = this;
+
+    this.${3:methodName} = function($4) {
+        $0
+    };
+
+};
+
+//===========================================================================
+// STATIC METHODS
+//===========================================================================
+$1.$2.__instance = new $1.$2();
+
+$1.$2.getInstance = function() {
+    return $1.$2.__instance;
+};
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>namespace</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>create a summer class</description>
+</snippet>
